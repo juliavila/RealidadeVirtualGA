@@ -298,6 +298,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CameraFocusController.cs" />
+    <Compile Include="Assets\DeployStageOnce.cs" />
+    <Compile Include="Assets\SpawnToy.cs" />
+    <Compile Include="Assets\StartingPoint.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
   </ItemGroup>
