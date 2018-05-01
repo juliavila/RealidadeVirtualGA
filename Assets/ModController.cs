@@ -3,23 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
 
-public class ModController : MonoBehaviour, ITrackableEventHandler {
+public class ModController : MonoBehaviour, ITrackableEventHandler 
+{
 
 	private TrackableBehaviour mTrackableBehaviour;
+	public GameObject buttonApplyCard;
 
 	//fixed mod
 	public string trackableTag = "FixedMod";
-	private bool showButtonApply = false;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		mTrackableBehaviour = GetComponent<TrackableBehaviour>();
 		if (mTrackableBehaviour)
 			mTrackableBehaviour.RegisterTrackableEventHandler(this);
+
+		buttonApplyCard.gameObject.SetActive (false);
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 	}
 
 	public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
@@ -45,7 +50,7 @@ public class ModController : MonoBehaviour, ITrackableEventHandler {
 		Debug.Log (">>>>TAG<<<< " + mTrackableBehaviour.tag);
 
 		if (mTrackableBehaviour.tag == trackableTag) {
-			showButtonApply = true;
+			buttonApplyCard.gameObject.SetActive (true);
 		}
 
 	}
@@ -53,5 +58,8 @@ public class ModController : MonoBehaviour, ITrackableEventHandler {
 	private void OnTrackingLost()
 	{
 		Debug.Log (">>>>TAG<<<< " + mTrackableBehaviour.tag);
+		if (mTrackableBehaviour.tag == trackableTag) {
+			buttonApplyCard.gameObject.SetActive (false);
+		}
 	}
 }
