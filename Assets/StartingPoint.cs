@@ -5,14 +5,13 @@ using UnityEngine;
 public class StartingPoint : MonoBehaviour {
 
 	public GameObject toyPrefab;
+	public GameObject ground;
 	public float spawnTime = 1f; 
 	public int totalToys = 5;
 	private int contToys = 0;
-	private GameObject ground;
 
 	// Use this for initialization
 	void Start () {
-		ground = GameObject.Find("Ground");
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
 	}
 
@@ -27,7 +26,9 @@ public class StartingPoint : MonoBehaviour {
 			return; */
 		contToys++;
 //		Debug.Log ("JULIA: total toys " + contToys);
+		GameObject emptyGameObj = new GameObject();
 		GameObject toy = Instantiate(toyPrefab, transform.position, transform.rotation);
-		toy.transform.SetParent(ground.transform);
+		emptyGameObj.transform.SetParent(ground.transform);
+		toy.transform.SetParent(emptyGameObj.transform);
 	}
 }
