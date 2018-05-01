@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 	void Update () {
 		ground.GetComponent<Renderer>().enabled = isVisible;
 		foreach (Transform child in ground.transform) {
-			child.GetComponent<Renderer>().enabled = isVisible;
+			//child.GetComponent<Renderer>().enabled = isVisible;
 		}
 	}
 
