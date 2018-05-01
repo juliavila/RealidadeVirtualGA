@@ -8,10 +8,11 @@ public class StartingPoint : MonoBehaviour {
 	public float spawnTime = 1f; 
 	public int totalToys = 5;
 	private int contToys = 0;
-
+	private GameObject ground;
 
 	// Use this for initialization
 	void Start () {
+		ground = GameObject.Find("Ground");
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
 	}
 
@@ -25,8 +26,8 @@ public class StartingPoint : MonoBehaviour {
 		/* if (contToys >= totalToys)
 			return; */
 		contToys++;
-		GameObject anchorImageTarget = GameObject.Find("BaseImageTarget");
+//		Debug.Log ("JULIA: total toys " + contToys);
 		GameObject toy = Instantiate(toyPrefab, transform.position, transform.rotation);
-		toy.transform.parent = anchorImageTarget.transform;
+		toy.transform.SetParent(ground.transform);
 	}
 }
