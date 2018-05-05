@@ -57,7 +57,7 @@ public class ModController : MonoBehaviour, ITrackableEventHandler
 
 	private void OnTrackingLost()
 	{
-		Debug.Log (">>>>TAG<<<< " + mTrackableBehaviour.tag);
+//		Debug.Log (">>>>TAG<<<< " + mTrackableBehaviour.tag);
 		if (mTrackableBehaviour.tag == trackableTag) {
 			buttonApplyCard.gameObject.SetActive (false);
 		}
