@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\StartingPoint.cs" />
      <Compile Include="Assets\Scripts\ToyController.cs" />
      <Compile Include="Assets\Scripts\ToyMove.cs" />
+     <Compile Include="Assets\Scripts\visibilityController.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
