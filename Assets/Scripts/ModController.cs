@@ -33,13 +33,13 @@ public class ModController : MonoBehaviour, ITrackableEventHandler
 			newStatus == TrackableBehaviour.Status.TRACKED ||
 			newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
 		{
-			Debug.Log("JULIA: Trackable " + mTrackableBehaviour.TrackableName + "/" + " found");
+	//		Debug.Log("JULIA: Trackable " + mTrackableBehaviour.TrackableName + "/" + " found");
 			OnTrackingFound();
 		}
 		else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
 			newStatus == TrackableBehaviour.Status.NOT_FOUND)
 		{
-			Debug.Log("JULIA: Trackable " + mTrackableBehaviour.TrackableName + " lost");
+	//		Debug.Log("JULIA: Trackable " + mTrackableBehaviour.TrackableName + " lost");
 			OnTrackingLost();
 		}
 		else OnTrackingLost();
@@ -47,7 +47,7 @@ public class ModController : MonoBehaviour, ITrackableEventHandler
 
 	private void OnTrackingFound()
 	{
-		Debug.Log (">>>>TAG<<<< " + mTrackableBehaviour.tag);
+//		Debug.Log (">>>>TAG<<<< " + mTrackableBehaviour.tag);
 
 		if (mTrackableBehaviour.tag == trackableTag) {
 			buttonApplyCard.gameObject.SetActive (true);

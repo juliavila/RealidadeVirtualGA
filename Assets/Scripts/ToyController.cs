@@ -6,7 +6,6 @@ using UnityEngine;
 public class ToyController : MonoBehaviour {
 
 	private float speed = 0.05F;
-	public float gravity = 20.0F;
 	private Transform target;
 	// Use this for initialization
 	void Start () 

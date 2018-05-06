@@ -56,6 +56,7 @@ public class ToyMove : MonoBehaviour {
 	{
 		if (cch.normal.y < 0.9) // elimina colisoes com o chao
 		{
+			Debug.Log ("%%%%% colidiu com um " + cch.gameObject.tag + " - " + cch.gameObject.name);
 			if(cch.gameObject.tag == "DirectionSign")
 			{
 				moveDir = cch.gameObject.GetComponent<DirectionChanger> ().getDirectionModifier ();

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Toy
   - FixedMod
+  - DirectionSign
   layers:
   - Default
   - TransparentFX

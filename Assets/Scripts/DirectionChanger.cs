@@ -19,13 +19,13 @@ public class DirectionChanger : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		dirMod = new Vector3 (1, 0, 0);
-		gameObject.tag = "DirectionSign";
+		dirMod =  transform.forward;
+		transform.gameObject.tag = "DirectionSign";
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
-		
+
 	}
 }
