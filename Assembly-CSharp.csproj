@@ -59,14 +59,15 @@
      <Compile Include="Assets\Scripts\FasteningTrigger.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\ModController.cs" />
+     <Compile Include="Assets\Scripts\NoARPlease.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\RandomColor.cs" />
+     <Compile Include="Assets\Scripts\SceneSelector.cs" />
      <Compile Include="Assets\Scripts\SlowingTrigger.cs" />
      <Compile Include="Assets\Scripts\SpinningCube.cs" />
      <Compile Include="Assets\Scripts\StartingPoint.cs" />
      <Compile Include="Assets\Scripts\ToyController.cs" />
      <Compile Include="Assets\Scripts\ToyMove.cs" />
-     <Compile Include="Assets\Scripts\visibilityController.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
