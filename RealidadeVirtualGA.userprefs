@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ToyMove.cs">
+    <Files>
+      <File FileName="Assets\Scripts\DirectionChanger.cs" Line="4" Column="1" />
+      <File FileName="Assets\Scripts\ToyMove.cs" Line="60" Column="45" />
+      <File FileName="Assets\Scripts\DirectionChangerTrigger.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\SlowingTrigger.cs" Line="13" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
