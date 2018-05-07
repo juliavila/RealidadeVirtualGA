@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\ModController.cs" />
      <Compile Include="Assets\Scripts\NoARPlease.cs" />
+     <Compile Include="Assets\Scripts\ObstacleController.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\RandomColor.cs" />
      <Compile Include="Assets\Scripts\SceneSelector.cs" />

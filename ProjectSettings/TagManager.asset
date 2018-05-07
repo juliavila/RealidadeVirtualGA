@@ -8,6 +8,7 @@ TagManager:
   - FixedMod
   - DirectionSign
   - Mod
+  - Obstacle
   layers:
   - Default
   - TransparentFX
