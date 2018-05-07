@@ -61,7 +61,7 @@ public class ToyMove : MonoBehaviour {
 			{
 				moveDir = cch.gameObject.GetComponent<DirectionChanger> ().getDirectionModifier ();
 			}
-			else
+			else if (cch.gameObject.tag != "Mod")
 			{
 			moveDir.x = moveDir.x * -1;
 			moveDir.z = moveDir.z * -1;
