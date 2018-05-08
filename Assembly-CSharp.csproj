@@ -80,6 +80,7 @@
      <None Include="Assets\StreamingAssets\Vuforia\test1.xml" />
      <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml" />
+     <None Include="Assets\POLY STYLE - Vegetation Pack\Readme.txt" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
