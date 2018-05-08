@@ -56,12 +56,16 @@ public class ToyMove : MonoBehaviour {
 	{
 		if (cch.normal.y < 0.9) // elimina colisoes com o chao
 		{
-			Debug.Log ("%%%%% colidiu com um " + cch.gameObject.tag + " - " + cch.gameObject.name);
+			//Debug.Log ("%%%%% colidiu com um " + cch.gameObject.tag + " - " + cch.gameObject.name);
 			if(cch.gameObject.tag == "DirectionSign")
 			{
 				moveDir = cch.gameObject.GetComponent<DirectionChanger> ().getDirectionModifier ();
 			}
-			else if (cch.gameObject.tag != "Mod" && cch.gameObject.tag != "Obstacle")
+			else if(cch.gameObject.tag == "Mod")
+			{
+				Physics.IgnoreCollision (GetComponent<Collider> (), cch.gameObject.GetComponent<Collider> ());
+			}
+			else if (cch.gameObject.tag != "Obstacle")
 			{
 			moveDir.x = moveDir.x * -1;
 			moveDir.z = moveDir.z * -1;
