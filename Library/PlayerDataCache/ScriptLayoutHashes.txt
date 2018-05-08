@@ -191,7 +191,8 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 ff6357d2ad37bab4e9b286a5db6c0daf Assembly-CSharp.dll:.StartingPoint
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-c30bed5dd8e319c54e857bbb7102f15b Assembly-CSharp.dll:.ToyController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ToyController
+2901d62e755de4214d32741e7a715647 Assembly-CSharp.dll:.DirectionChangerTrigger
 cb004cde9e430ca780a2fda6387826da Assembly-CSharp.dll:.SpinningCube
 7d7f8d06b0e7a2c9d3ddb8a2075c7284 Assembly-CSharp.dll:.GameController
 2901d62e755de4214d32741e7a715647 Assembly-CSharp.dll:.DirectionChanger
@@ -300,3 +301,5 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
+8f378ae6f15aaa39bbc0fa9a156bc19a Assembly-CSharp.dll:.Trampolin
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ObstacleController

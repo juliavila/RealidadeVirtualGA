@@ -23,7 +23,9 @@ public class Trampolin : MonoBehaviour {
 		Debug.Log("&&& JUMP  colidiu com " + col.gameObject.tag);
 		if (col.gameObject.tag == "Toy") 
 		{
-			col.gameObject.GetComponent<ToyMove>().moveDir.y = jumpStr;
+			Vector3 newMoveDir = 
+				col.gameObject.GetComponent<ToyMove> ().getMoveDirection () + new Vector3 (0, jumpStr, 0);
+			col.gameObject.GetComponent<ToyMove>().setMoveDirection(newMoveDir);
 		}
 	}
 }

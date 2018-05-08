@@ -5,8 +5,8 @@ using UnityEngine;
 public class ToyMove : MonoBehaviour {
 
 	public const float grav = 20.0f;
-	public Vector3 moveDir = Vector3.zero;
-	private float speed = 3.0f;
+	private Vector3 moveDir = Vector3.zero;
+	public float speed = 1.0f;
 
 	public Vector3 getMoveDirection()
 	{

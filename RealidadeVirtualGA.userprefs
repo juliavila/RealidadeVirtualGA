@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Trampolin.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ObstacleController.cs">
     <Files>
-      <File FileName="Assets\Scripts\SlowingTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Trampolin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SlowingTrigger.cs" Line="21" Column="21" />
+      <File FileName="Assets\Scripts\ObstacleController.cs" Line="17" Column="21" />
+      <File FileName="Assets\Scripts\Trampolin.cs" Line="7" Column="28" />
+      <File FileName="Assets\Scripts\ToyMove.cs" Line="64" Column="75" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
