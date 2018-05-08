@@ -15,6 +15,9 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 	//fixed mod
 	public string trackableTag = "FixedMod";
 
+	private int numDead = 0;
+	private int numSafe = 0;
+
 	// Use this for initialization
 	void Start () {
 		mTrackableBehaviour = GetComponent<TrackableBehaviour>();
@@ -73,5 +76,20 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 		if (mTrackableBehaviour.TrackableName == groundTrackableName)
 			isVisible = false;
 	}
+
+	public void addDead() {
+		numDead++;
+	}
 		
+	public int getNumDead() {
+		return numDead;
+	}
+
+	public void addSafe() {
+		numSafe++;
+	}
+
+	public int getNumSafe() {
+		return numSafe;
+	}
 }
