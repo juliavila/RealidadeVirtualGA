@@ -58,7 +58,7 @@
      <Compile Include="Assets\Scripts\DirectionChanger.cs" />
      <Compile Include="Assets\Scripts\DirectionChangerTrigger.cs" />
      <Compile Include="Assets\Scripts\EndPointController.cs" />
-     <Compile Include="Assets\Scripts\EscavadorModController.cs" />
+     <Compile Include="Assets\Scripts\EraserController.cs" />
      <Compile Include="Assets\Scripts\FasteningTrigger.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\ModController.cs" />
