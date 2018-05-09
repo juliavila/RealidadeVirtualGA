@@ -678,7 +678,6 @@ GameObject:
   - component: {fileID: 879930694}
   - component: {fileID: 879930693}
   - component: {fileID: 879930695}
-  - component: {fileID: 879930696}
   m_Layer: 0
   m_Name: Soundtrack
   m_TagString: Untagged
@@ -791,17 +790,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtMusic: {fileID: 92166297}
---- !u!114 &879930696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 879930692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8c731f253c1de4886411546fb18455, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1081149422
 GameObject:
   m_ObjectHideFlags: 0
