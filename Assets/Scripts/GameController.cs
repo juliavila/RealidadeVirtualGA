@@ -12,11 +12,14 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 	public string groundTrackableName = "ground";
 	private bool isVisible = false;
 
+	public GameObject panelEndGame;
+
 	//fixed mod
 	public string trackableTag = "FixedMod";
 
 	private int numDead = 0;
 	private int numSafe = 0;
+	private int numTotal = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +31,9 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 	// Update is called once per frame
 	void Update () {
 		changeVisibility (ground.transform, isVisible);
+
+		if (numTotal == 1)
+			endGame ();
 	}
 
 	void changeVisibility (Transform parent, bool visibility){
@@ -62,19 +68,17 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 	private void OnTrackingFound()
 	{
 		if (mTrackableBehaviour.TrackableName == groundTrackableName)
-			isVisible = true;
-
-//		Debug.Log (">>>>TAG<<<<");
-//		Debug.Log ("tag: " + mTrackableBehaviour.tag);
-
-		//if (mTrackableBehaviour.tag == trackableTag)
-			
+			isVisible = true;			
 	}
 
 	private void OnTrackingLost()
 	{
 		if (mTrackableBehaviour.TrackableName == groundTrackableName)
 			isVisible = false;
+	}
+
+	private void endGame() {
+		panelEndGame.SetActive(true);
 	}
 
 	public void addDead() {
@@ -91,5 +95,13 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 
 	public int getNumSafe() {
 		return numSafe;
+	}
+
+	public void addNumTotal() {
+		numTotal++;
+	}
+
+	public int getNumTotal() {
+		return numTotal;
 	}
 }

@@ -22,18 +22,15 @@ public class StartingPoint : MonoBehaviour {
 
 	public void Spawn()
 	{
-		/* if (contToys >= totalToys)
-			return; */
+		if (contToys >= totalToys)
+			return;
+		
 		contToys++;
-//		Debug.Log ("JULIA: total toys " + contToys);
 		GameObject emptyGameObj = new GameObject();
-		Vector3 newPosition = transform.position;
 
-	//	newPosition.z -= 3;
-		GameObject toy = Instantiate(toyPrefab, newPosition, emptyGameObj.transform.rotation);
-		//Vector3 scale = toy.transform.localScale;
+		GameObject toy = Instantiate(toyPrefab, transform.position, emptyGameObj.transform.rotation);
 		emptyGameObj.transform.SetParent(ground.transform);
 		toy.transform.SetParent(emptyGameObj.transform);
-		//toy.transform.localScale = scale;
+
 	}
 }

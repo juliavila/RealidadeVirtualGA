@@ -20,6 +20,7 @@ public class EndPointController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 
+		gameController.GetComponent<GameController> ().addNumTotal();
 		gameController.GetComponent<GameController>().addSafe();
 		txtNumSafe.text = gameController.GetComponent<GameController>().getNumSafe().ToString();
 

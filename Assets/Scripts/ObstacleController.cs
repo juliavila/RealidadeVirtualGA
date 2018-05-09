@@ -18,7 +18,8 @@ public class ObstacleController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		
+
+		gameController.GetComponent<GameController> ().addNumTotal();
 		gameController.GetComponent<GameController>().addDead();
 		txtNumDead.text = gameController.GetComponent<GameController>().getNumDead().ToString();
 			
