@@ -16,6 +16,7 @@ public class PrefabModController : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col)
 	{
+		Debug.Log ("@#$% NAME " + col.gameObject.name);
 		if (col.gameObject.name != "Ground") {
 			Physics.IgnoreCollision (col.gameObject.GetComponent<Collider>(), GetComponent<Collider>());
 		}

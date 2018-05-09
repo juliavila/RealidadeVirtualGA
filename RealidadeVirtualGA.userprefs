@@ -1,10 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DontDestroyThis.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PrefabModController.cs">
     <Files>
-      <File FileName="Assets\Soundtrack.cs" Line="9" Column="2" />
-      <File FileName="Assets\Scripts\EndPointController.cs" Line="4" Column="1" />
-      <File FileName="Assets\DontDestroyThis.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\ToyMove.cs" Line="67" Column="62" />
+      <File FileName="Assets\Scripts\PrefabModController.cs" Line="20" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
