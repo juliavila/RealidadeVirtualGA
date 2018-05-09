@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 65292121967413622}
   - component: {fileID: 23677799453583510}
   - component: {fileID: 54870743285017906}
+  - component: {fileID: 114583320341270762}
   m_Layer: 0
   m_Name: ModDirection
-  m_TagString: Untagged
+  m_TagString: Mod
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,6 +228,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114583320341270762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091249689971028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65080c155f23e7c46a8b72d01cffd826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114858748704777816
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1220,6 +1220,11 @@ Prefab:
       propertyPath: ground
       value: 
       objectReference: {fileID: 943227494}
+    - target: {fileID: 114930707879147800, guid: f1dede433c2ef7742a2a4b80fdefdc20,
+        type: 2}
+      propertyPath: totalToys
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1dede433c2ef7742a2a4b80fdefdc20, type: 2}
   m_IsPrefabParent: 0
@@ -1504,7 +1509,7 @@ BoxCollider:
   m_GameObject: {fileID: 658164237}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1781,6 +1786,7 @@ MonoBehaviour:
   ground: {fileID: 943227494}
   groundTrackableName: ground
   panelEndGame: {fileID: 1420394034}
+  startingPoint: {fileID: 1433077011}
   trackableTag: FixedMod
 --- !u!43 &809705205
 Mesh:
@@ -2599,7 +2605,7 @@ BoxCollider:
   m_GameObject: {fileID: 1067298015}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2858,7 +2864,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4899649691974792, guid: 9b05a4578548c974e8cda7956bf83eb2, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b05a4578548c974e8cda7956bf83eb2, type: 2}
@@ -2962,48 +2968,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1298479107}
---- !u!1001 &1308009479
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -11.150852
-      objectReference: {fileID: 0}
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.13039857
-      objectReference: {fileID: 0}
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3.5238495
-      objectReference: {fileID: 0}
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4179303597649462, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ba1930469e986f24993f7f155acc582d, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1317432736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,6 +3307,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420394034}
+--- !u!1 &1433077011 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1762108484236888, guid: f1dede433c2ef7742a2a4b80fdefdc20,
+    type: 2}
+  m_PrefabInternal: {fileID: 431181598}
 --- !u!21 &1491632031
 Material:
   serializedVersion: 6
@@ -3572,7 +3541,7 @@ BoxCollider:
   m_GameObject: {fileID: 1512419060}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3816,7 +3785,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ground: {fileID: 943227494}
   groundTrackableName: ground
-  panelEndGame: {fileID: 0}
+  panelEndGame: {fileID: 1420394034}
+  startingPoint: {fileID: 1433077011}
   trackableTag: FixedMod
 --- !u!4 &1631672037
 Transform:
@@ -3829,7 +3799,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1634145919
 GameObject:

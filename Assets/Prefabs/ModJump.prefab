@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65383226435692728}
   - component: {fileID: 23482820379195666}
   - component: {fileID: 54055667454340854}
+  - component: {fileID: 114787810091767620}
   m_Layer: 0
   m_Name: ModJump
   m_TagString: Mod
@@ -239,6 +240,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpStr: 12
+--- !u!114 &114787810091767620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1162263207862382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65080c155f23e7c46a8b72d01cffd826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212644662928773300
 SpriteRenderer:
   m_ObjectHideFlags: 1

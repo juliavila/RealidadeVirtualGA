@@ -56,15 +56,19 @@ public class ToyMove : MonoBehaviour {
 	{
 		if (cch.normal.y < 0.9) // elimina colisoes com o chao
 		{
-			Debug.Log ("%%%%% colidiu com um " + cch.gameObject.tag + " - " + cch.gameObject.name);
+			Debug.Log ("%%%%% colidiu com um " + cch.gameObject.tag + " - " + cch.gameObject.name 
+				+ " - is trigger " + cch.gameObject.GetComponent<BoxCollider>().isTrigger);
 			if(cch.gameObject.tag == "DirectionSign")
 			{
-				moveDir = cch.gameObject.GetComponent<DirectionChanger> ().getDirectionModifier ();
+				moveDir = cch.gameObject.GetComponent<DirectionChanger> ().getDirectionModifier ();	
 			}
-			else if (cch.gameObject.tag != "Mod" && cch.gameObject.tag != "Obstacle")
+			else if (cch.gameObject.tag != "Mod" 
+				&& cch.gameObject.tag != "Obstacle" 
+				&& !cch.gameObject.GetComponent<BoxCollider>().isTrigger)
 			{
-			moveDir.x = moveDir.x * -1;
-			moveDir.z = moveDir.z * -1;
+				moveDir.x = moveDir.x * -1;
+				moveDir.z = moveDir.z * -1;
+				transform.localEulerAngles = new Vector3(0f, 180f, 0f);
 			}
 		}
 	}

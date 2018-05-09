@@ -12,7 +12,9 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 	public string groundTrackableName = "ground";
 	private bool isVisible = false;
 
+	// end game
 	public GameObject panelEndGame;
+	public GameObject startingPoint;
 
 	//fixed mod
 	public string trackableTag = "FixedMod";
@@ -31,8 +33,7 @@ public class GameController : MonoBehaviour, ITrackableEventHandler{
 	// Update is called once per frame
 	void Update () {
 		changeVisibility (ground.transform, isVisible);
-
-		if (numTotal == 1)
+		if (numTotal == startingPoint.GetComponent<StartingPoint>().totalToys)
 			endGame ();
 	}
 

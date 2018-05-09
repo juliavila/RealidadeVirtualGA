@@ -19,12 +19,12 @@ public class ObstacleController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 
-		gameController.GetComponent<GameController> ().addNumTotal();
-		gameController.GetComponent<GameController>().addDead();
-		txtNumDead.text = gameController.GetComponent<GameController>().getNumDead().ToString();
-			
-		if (other.gameObject.tag == "Toy")
-			Destroy(other.gameObject);
+		if (other.gameObject.tag == "Toy") {
+			gameController.GetComponent<GameController> ().addNumTotal ();
+			gameController.GetComponent<GameController> ().addDead ();
+			txtNumDead.text = gameController.GetComponent<GameController> ().getNumDead ().ToString ();
+			Destroy (other.gameObject);
+		}
 	}
 
 }
